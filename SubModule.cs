@@ -26,7 +26,7 @@ namespace SettlementDistanceCache
         [HarmonyPatch(typeof(SettlementPositionScript), "SettlementsDistanceCacheFilePath", MethodType.Getter)]
         public static class SettlementPositionScriptSettlementsDistanceCacheFilePath
         {
-            public static void Postfix(ref string __result) => __result = ModuleHelper.GetModuleFullPath("RF-MAP") + "/ModuleData/settlements_distance_cache.bin";
+            public static void Postfix(ref string __result) => __result = ModuleHelper.GetModuleFullPath("TheRealm") + "/ModuleData/settlements_distance_cache.bin";
         }
     }
 }
